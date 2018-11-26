@@ -19,6 +19,7 @@
 	"homepage": "https://github.com/noltron000/BEW-1-2_jwt-tutorial#readme",
 	"dependencies": {
 		"express-handlebars": "^3.0.0",
-		"handlebars": "^4.0.12"
+		"handlebars": "^4.0.12",
+		"nodemon": "^1.18.6"
 	}
 }
