@@ -1,0 +1,23 @@
+{
+	"name": "jwt-tutorial",
+	"version": "1.0.0",
+	"description": "JWT tutorial",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/noltron000/BEW-1-2_jwt-tutorial.git"
+	},
+	"author": "Nolan Kovacik",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/noltron000/BEW-1-2_jwt-tutorial/issues"
+	},
+	"homepage": "https://github.com/noltron000/BEW-1-2_jwt-tutorial#readme",
+	"dependencies": {
+		"handlebars": "^4.0.12"
+	}
+}
