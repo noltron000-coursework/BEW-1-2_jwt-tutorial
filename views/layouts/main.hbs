@@ -11,13 +11,15 @@
 <body>
 	<h1>Hello World</h1>
 	{{{body}}}
+
+
 	<script>
 		const formToJson = () => {
-			var formElement = document.getElementsByTagName("form")[0],
+			const formElement = document.getElementsByTagName("form")[0],
 				inputElements = formElement.getElementsByTagName("input"),
 				jsonObject = {};
-			for (var i = 0; i < inputElements.length; i++) {
-				var inputElement = inputElements[i];
+			for (let i = 0; i < inputElements.length; i++) {
+				const inputElement = inputElements[i];
 				jsonObject[inputElement.name] = inputElement.value;
 			}
 			return JSON.stringify(jsonObject);

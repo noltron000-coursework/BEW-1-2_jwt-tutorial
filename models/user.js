@@ -14,9 +14,10 @@ const UserSchema = new Schema({
 	}
 });
 
+
+// TODO: understand this better
 UserSchema.pre("save", (next) => {
-	// ENCRYPT PASSWORD
-	var user = this;
+	let user = this;
 	if (!user.isModified("password")) {
 		return next();
 	}
