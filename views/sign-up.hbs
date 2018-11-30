@@ -7,12 +7,12 @@
 </div>
 
 <script>
-	signupViaAjax() => {
+	const signupViaAjax = () => {
 		fetch("/sign-up")
-			.then(function (data) {
-				// Here you get the data to modify as you please
+			.then((data) => {
+				console.log(data)
 			})
-			.catch(function (error) {
+			.catch((error) => {
 				// If there is any error you will catch them here
 			});
 	}
