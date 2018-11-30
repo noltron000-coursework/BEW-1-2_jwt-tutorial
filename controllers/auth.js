@@ -5,4 +5,9 @@ module.exports = (app) => {
 	app.get('/sign-up', (req, res) => {
 		res.render('sign-up')
 	});
+
+	// Post Sign-Up form
+	app.post('/sign-up', (req, res) => {
+
+	})
 }

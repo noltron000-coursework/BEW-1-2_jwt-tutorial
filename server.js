@@ -10,7 +10,7 @@ app.engine('.hbs', exprHBS({
 	extname: '.hbs',
 	defaultLayout: 'main'
 }));
-app.set('view engine', '.hbs'); // should it be .hbs?
+app.set('view engine', '.hbs'); // should it be .hbs or hbs?
 
 // require additional files
 const auth = require('./controllers/auth.js')(app);
