@@ -1,6 +1,8 @@
 // require middleware etc
 const express = require('express');
 const exprHBS = require('express-handlebars');
+const bodyParser = require('body-parser');
+
 
 const app = express();
 const port = 3000;
@@ -11,6 +13,9 @@ app.engine('.hbs', exprHBS({
 	defaultLayout: 'main'
 }));
 app.set('view engine', '.hbs'); // should it be .hbs or hbs?
+
+// set up bodyparser
+app.use(bodyParser.json())
 
 // require additional files
 const auth = require('./controllers/auth.js')(app);
