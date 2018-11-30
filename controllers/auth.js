@@ -8,15 +8,16 @@ module.exports = (app) => {
 
 	// Post Sign-Up form
 	app.post('/sign-up', (req, res) => {
-		// instantiate instance of user model
-		const user = new User(req.body);
-		// save instance of flare model to db
 		console.log(req.body);
-		flare.save((err, flare) => {
-			// redirect to the index
-			console.log(flare);
-			console.log(err);
-			return res.redirect('/flares');
-		});
+
+		// // instantiate instance of user model
+		// const user = new User(req.body);
+		// // save instance of flare model to db
+		// flare.save((err, flare) => {
+		// 	// redirect to the index
+		// 	console.log(flare);
+		// 	console.log(err);
+		// 	return res.redirect('/flares');
+		// 	});
 	})
 }

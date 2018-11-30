@@ -5,15 +5,3 @@
 		<input type="submit" value="Sign In" onclick="signupViaAjax()">
 	</form>
 </div>
-
-<script>
-	const signupViaAjax = () => {
-		fetch("/sign-up")
-			.then((data) => {
-				console.log(data)
-			})
-			.catch((error) => {
-				// If there is any error you will catch them here
-			});
-	}
-</script>

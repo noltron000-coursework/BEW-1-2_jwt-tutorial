@@ -11,6 +11,36 @@
 <body>
 	<h1>Hello World</h1>
 	{{{body}}}
+	<script>
+		const formToJson = () => {
+			var formElement = document.getElementsByTagName("form")[0],
+				inputElements = formElement.getElementsByTagName("input"),
+				jsonObject = {};
+			for (var i = 0; i < inputElements.length; i++) {
+				var inputElement = inputElements[i];
+				jsonObject[inputElement.name] = inputElement.value;
+			}
+			return JSON.stringify(jsonObject);
+		}
+
+		const signupViaAjax = () => {
+			const formData = formToJson();
+			fetch("/sign-up", {
+				method: "POST",
+				body: formData,
+				headers: {
+					'Accept': 'application/json',
+					'Content-Type': 'application/json',
+				}
+			})
+				.then((data) => {
+					console.log(data)
+				})
+				.catch((error) => {
+					// If there is any error you will catch them here
+				});
+		}
+	</script>
 </body>
 
 </html>
