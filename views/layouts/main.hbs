@@ -22,7 +22,6 @@
 			}
 			return JSON.stringify(jsonObject);
 		}
-
 		const signupViaAjax = () => {
 			const formData = formToJson();
 			fetch("/sign-up", {
@@ -37,7 +36,7 @@
 					console.log(data)
 				})
 				.catch((error) => {
-					// If there is any error you will catch them here
+					console.log(error)
 				});
 		}
 	</script>
