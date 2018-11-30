@@ -9,6 +9,7 @@ module.exports = (app) => {
 	// Post Sign-Up form
 	app.post('/sign-up', (req, res) => {
 		const user = new User(req.body);
+		console.log(user)
 		// // save instance of flare model to db
 		// flare.save((err, flare) => {
 		// 	// redirect to the index
